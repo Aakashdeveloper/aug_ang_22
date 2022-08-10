@@ -56,3 +56,60 @@ Angular>
 Angular is frontend framework that help to build single page applications
 using component base structure
 
+
+////////////////
+NPM > Node Package Manager
+
+////////////////////////////////
+package.json
+> Starting point app
+> All the meta data (name,version,description)
+> Scripts (start,build,test)
+> packages we are using in app
+
+////////////////////////////////
+Step To generate package.json
+////////////////////////////////
+> open the cmd/terminal
+> go inside the folder using cmd/terminal
+> type npm init
+> Answer all questions
+> type yes
+
+
+////////////////////////////////
+Step To install package
+////////////////////////////////
+> open the cmd/terminal  & go inside the folder using cmd/terminal
+> npm i packagename
+
+
+node_modules > it contains all the packages
+package-lock > dependencies tree
+Readme > detail description of the app
+.gitignore > it avoid pushing to git
+
+
+////////////////
+Step to generate angular app
+/////////
+# window
+@@ One Time step
+> open cmd as administrator
+> npm i -g @angular/cli
+> close cmd
+
+@@ Every Time you need new app
+> open the cmd  & go inside the folder using cmd
+> ng new appname
+
+
+# mac/linux
+@@ One Time step
+> open terminal
+> sudo npm i -g @angular/cli
+> close terminal
+
+@@ Every Time you need new app
+> open the terminal  & go inside the folder using terminal
+> ng new appname
