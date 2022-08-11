@@ -84,10 +84,31 @@ Step To install package
 > npm i packagename
 
 
+package.json> Starting point app & all packages
 node_modules > it contains all the packages
 package-lock > dependencies tree
 Readme > detail description of the app
 .gitignore > it avoid pushing to git
+.tsconfig.json > this file help to transpile (convertt into js)
+tsconfig.app.json > this file have folder location for actual and transpiled file 
+Karams > testing configuration
+angualr.json > this is first file to run the app
+            > Any common css/js
+            > which is first ts & html
+.editorconfig > To make same oding standard among developer
+.browserslistrc > What all browser support we have
+
+src >>>>>>>>>>>>>>
+style.css > common css for the whole app
+polyfills > make app compitable for IE
+main.ts > this is the first .ts file run
+index.html > first .html file load in browser
+
+package.json > angualr.json > main.ts > app.module.ts > app.component.ts
+                                ||
+                                || compile code into single html
+                                \/
+                            index.html (load on browser)
 
 
 ////////////////
@@ -115,6 +136,16 @@ Step to generate angular app
 > ng new appname
 
 
+////////////
+Building Block of angular
+/////////
+Modules
+Component
+Pipes
+Services
+Routing
+
+
 Dear Students please pay the fee for ________(Course name)_____ (time) by Mr. __________ Fee  Rs. _______
 Bank Details 
 Name: Naresh i Technologies
@@ -138,3 +169,16 @@ Thanks and Regards
 Naresh
 Mobile:8919944069 (Only Whatsapp)
 fee is 9600
+
+
+Demo: 01 ( 08-08-2022)
+Video Link: shorturl.at/bfjM7
+Password:  Y4.raH=c
+
+Demo: 02 ( 09-08-2022)
+Video Link: shorturl.at/sUZ06
+Password: u?268!BA
+
+Demo: 03 ( 10-08-2022)
+Video Link: shorturl.at/enOV6
+Password: 50FB1*gf
