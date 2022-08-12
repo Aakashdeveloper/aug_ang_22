@@ -140,10 +140,19 @@ Step to generate angular app
 Building Block of angular
 /////////
 Modules
+> Parent of the app
+> All the block have to be declare
 Component
+> Html,css, logics
 Pipes
+> Filter the data
+> Run time data change (manupulation)
 Services
+> To Connect with external agent
+> Dependency Injection
 Routing
+> To Navigate between the pages
+
 
 
 Dear Students please pay the fee for ________(Course name)_____ (time) by Mr. __________ Fee  Rs. _______
@@ -182,3 +191,7 @@ Password: u?268!BA
 Demo: 03 ( 10-08-2022)
 Video Link: shorturl.at/enOV6
 Password: 50FB1*gf
+
+Demo: 04 ( 11-08-2022)
+Video Link: shorturl.at/CGLP1
+Password: 3F?YDej+
