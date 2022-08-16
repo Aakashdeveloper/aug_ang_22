@@ -153,6 +153,19 @@ Services
 Routing
 > To Navigate between the pages
 
+//////////////////////////
+Head > Use to to linking (css,js) as well as add title
+Body> All the content user see is in body
+
+Block
+> They always start from new line
+> Take whole width of screen
+> P H1 div
+Inline
+> They start in same line
+> Only take space required
+> a, span, img
+
 
 
 Dear Students please pay the fee for ________(Course name)_____ (time) by Mr. __________ Fee  Rs. _______
