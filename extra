@@ -166,45 +166,37 @@ Inline
 > Only take space required
 > a, span, img
 
+////////////
+inline
+styletag
+stylesheet
 
+inline>styletag>stylesheet
 
-Dear Students please pay the fee for ________(Course name)_____ (time) by Mr. __________ Fee  Rs. _______
-Bank Details 
-Name: Naresh i Technologies
-A/C No. 50200022639833     
-Bank: HDFC
-A/C Type: Current Account
-IFSC Code: HDFC0001627
-MICR Code: 500240035
-Branch Code: 001627
-Branch:  Ameerpet
+# inline
+{
+    color:red;
+    font-size:30px
+}
 
-Note: If you want to use Phonepe or Google Pay then follow the below steps.
+# styletag
+{
+    color:orange;
+    height:30px;
+    width:30px;
+}
 
-You can find the option Bank Transfer in Phonepe and Google pay. There you can enter our bank account number and you can transfer the amount.  Please mention your Name on the receipt and send a email once the payment is done to support@nareshit.com.
-  
-For any Queries, You can can Call us on +91-8179191999 or email us to support@nareshit.com 
+# stylesheet
+{
+    font-size:40px;
+    height:80px;
+    border-radius:30%
+}
 
-Please share your feedback to  Admin
-
-Thanks and Regards 
-Naresh
-Mobile:8919944069 (Only Whatsapp)
-fee is 9600
-
-
-Demo: 01 ( 08-08-2022)
-Video Link: shorturl.at/bfjM7
-Password:  Y4.raH=c
-
-Demo: 02 ( 09-08-2022)
-Video Link: shorturl.at/sUZ06
-Password: u?268!BA
-
-Demo: 03 ( 10-08-2022)
-Video Link: shorturl.at/enOV6
-Password: 50FB1*gf
-
-Demo: 04 ( 11-08-2022)
-Video Link: shorturl.at/CGLP1
-Password: 3F?YDej+
+{
+  color:red;
+  font-size:30px;
+  height:30px;
+  width:30px;
+  border-radius:30%
+}
