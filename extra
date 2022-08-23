@@ -200,3 +200,20 @@ inline>styletag>stylesheet
   width:30px;
   border-radius:30%
 }
+
+////targeting////
+Id >>> To target something unique
+>>> # symbol
+Class >>> to target multiple element with same property
+>>> . symbol
+TagName >>> Target the tag
+
+https://htmlcolorcodes.com/
+
+solid
+dotted
+dashed
+groove
+double
+
+https://imgbb.com/
