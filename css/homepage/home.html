@@ -2,6 +2,11 @@
     <head>
         <title>DevFlip</title>
         <link rel="stylesheet" href="home.css"/>
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/owl.carousel.min.js" integrity="sha512-bPs7Ae6pVvhOSiIcyUClR7/q2OAsRiovw4vAkX+zJbw3ShAeeqezq50RIIcIURq7Oa20rW2n2q+fyXBNcU9lrw==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.carousel.min.css" integrity="sha512-tS3S5qG0BlhnQROyJXvNjeEM4UpMXHrQfTGmbQ1gKmelCxlSEBUaxhRBj/EFTzpbP4RVSrpEikbmdJobCvhE3g==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.theme.default.css" integrity="sha512-OTcub78R3msOCtY3Tc6FzeDJ8N9qvQn1Ph49ou13xgA9VsH9+LRxoFU6EqLhW4+PKRfU+/HReXmSZXHEkpYoOA==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+        <script src="https://kit.fontawesome.com/c4338603d0.js" crossorigin="anonymous"></script>
         <link href="images/flipicon.jpeg" rel="icon"/>
     </head>
     <body>
@@ -16,22 +21,223 @@
             </div>
             <div id="search-box">
                 <input id="search-bar" placeholder="Search..."/>
-                <button>S</button>
+                <button><i class="fa-solid fa-magnifying-glass"></i></button>
             </div>
             <div id="login">
-                <button>Login</button>
-                <button>SignUp</button>
+                <button> Login</button> &nbsp;&nbsp;&nbsp;
+                <button> SignUp</button>
             </div>
         </header>
         <div id="main">
             <div id="top-strip">
+                <div id="strip-container">
+                    <figure class="strip-icons">
+                        <img src="https://i.ibb.co/72tFJDD/top-offers.png" alt="offer"/>
+                        <figcaption>Top Offers</figcaption>
+                    </figure>
+                    <figure class="strip-icons">
+                        <img src="https://i.ibb.co/PZvWQpp/grocery.png" alt="offer"/>
+                        <figcaption>Grocery</figcaption>
+                    </figure>
+                    <figure class="strip-icons">
+                        <img src="https://i.ibb.co/Jptfv9B/mobiles.png" alt="offer"/>
+                        <figcaption>Mobiles</figcaption>
+                    </figure>
+                    <figure class="strip-icons">
+                        <img src="https://i.ibb.co/NW23z09/fashion.png" alt="offer"/>
+                        <figcaption>Fashion</figcaption>
+                    </figure>
+                    <figure class="strip-icons">
+                        <img src="https://i.ibb.co/JtxLjXB/electronics.png" alt="offer"/>
+                        <figcaption>Electronics</figcaption>
+                    </figure>
+                    <figure class="strip-icons">
+                        <img src="https://i.ibb.co/X2Tp0Bd/travel.png" alt="offer"/>
+                        <figcaption>Travel</figcaption>
+                    </figure>
+                    <figure class="strip-icons">
+                        <img src="https://i.ibb.co/qFzmCwd/appliances.png" alt="offer"/>
+                        <figcaption>Appliances</figcaption>
+                    </figure>
+                    <figure class="strip-icons">
+                        <img src="https://i.ibb.co/64kY2Cd/toys.png" alt="offer"/>
+                        <figcaption>Toys</figcaption>
+                    </figure>
+                </div>
             </div>
-            <div id="slider"></div>
-            <div id="deal"></div>
-            <div id="mdeal"></div>
+            <div id="slider">
+                <img src="images/redmi10.jpg" alt="slider"/>
+            </div>
+            <div class="deal">
+                <h1>Deals of the Day</h1>
+                <hr/>
+                <div class="owl-carousel owl-theme">
+                    <div class="item" id="first">
+                        <img src="https://i.ibb.co/Zc2vYBP/989e52b7acbe.jpg" alt="clothes"/>
+                        <div>
+                            <p>Color Block Men Black Track Pants</p>
+                            <span>Min 77% Off</span>
+                        </div>
+                    </div>
+                    <div class="item" id="second">
+                        <img src="https://i.ibb.co/bNRPLZv/2c7fd28b6ae0.jpg" alt="clothes"/>
+                        <div>
+                            <p>Color Block Men Black Track Pants</p>
+                            <span>Min 77% Off</span>
+                        </div>
+                    </div>
+                    <div class="item" id="third">
+                        <img src="https://i.ibb.co/rbm9mZ3/af7ea238d868.jpg" alt="clothes"/>
+                        <div>
+                            <p>Color Block Men Black Track Pants</p>
+                            <span>Min 77% Off</span>
+                        </div>
+                    </div>
+                    <div class="item" id="fourth">
+                        <img src="https://i.ibb.co/b2G2Vm4/c06bbea9e94b.jpg" alt="clothes"/>
+                        <div>
+                            <p>Color Block Men Black Track Pants</p>
+                            <span>Min 77% Off</span>
+                        </div>
+                    </div>
+                    <div class="item" id="fifth">
+                        <img src="https://i.ibb.co/Rypw1V4/a6723ff70f97.jpg" alt="clothes"/>
+                        <div>
+                            <p>Color Block Men Black Track Pants</p>
+                            <span>Min 77% Off</span>
+                        </div>
+                    </div>
+                    <div class="item" id="sixth">
+                        <img src="https://i.ibb.co/XSP0kds/fd8688442c86.jpg" alt="clothes"/>
+                        <div>
+                            <p>Color Block Men Black Track Pants</p>
+                            <span>Min 77% Off</span>
+                        </div>
+                    </div>
+                    <div class="item" id="sixth">
+                        <img src="https://i.ibb.co/kx58JLq/17b1e3f5773a.jpg" alt="clothes"/>
+                        <div>
+                            <p>Color Block Men Black Track Pants</p>
+                            <span>Min 77% Off</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="deal">
+                <h1>Attractive Deals</h1>
+                <hr/>
+                <div class="owl-carousel owl-theme">
+                    <div class="item mobile" id="first">
+                        <img src="https://i.ibb.co/dcRmhTd/8f3c87d739b0.jpg" alt="clothes"
+                        class="mobileImg"/>
+                        <div>
+                            <p>Realme C11 2021</p>
+                            <span>Min 6% Off</span>
+                        </div>
+                    </div>
+                    <div class="item mobile">
+                        <img src="https://i.ibb.co/WWHGS0n/04055d5a6a69.jpg" alt="clothes"
+                        class="mobileImg"/>
+                        <div>
+                            <p>Realme C11 2021</p>
+                            <span>Min 6% Off</span>
+                        </div>
+                    </div>
+                    <div class="item mobile">
+                        <img src="https://i.ibb.co/bmmQZMq/4686f715fa69.jpg" alt="clothes"
+                        class="mobileImg"/>
+                        <div>
+                            <p>Realme C11 2021</p>
+                            <span>Min 6% Off</span>
+                        </div>
+                    </div>
+                    <div class="item mobile">
+                        <img src="https://i.ibb.co/hVNsvxQ/3159095e7184.jpg" alt="clothes"
+                        class="mobileImg"/>
+                        <div>
+                            <p>Realme C11 2021</p>
+                            <span>Min 6% Off</span>
+                        </div>
+                    </div>
+                    <div class="item mobile">
+                        <img src="https://i.ibb.co/cbV2xQD/7012fb92607e.jpg" alt="clothes"
+                        class="mobileImg"/>
+                        <div>
+                            <p>Realme C11 2021</p>
+                            <span>Min 6% Off</span>
+                        </div>
+                    </div>
+                    <div class="item mobile">
+                        <img src="https://i.ibb.co/GkqDqSS/c11232b5c63f.jpg" alt="clothes"
+                        class="mobileImg"/>
+                        <div>
+                            <p>Realme C11 2021</p>
+                            <span>Min 6% Off</span>
+                        </div>
+                    </div>
+                    <div class="item mobile">
+                        <img src="https://i.ibb.co/KWq6d2x/c3a36c14548b.jpg" alt="clothes"
+                        class="mobileImg"/>
+                        <div>
+                            <p>Realme C11 2021</p>
+                            <span>Min 6% Off</span>
+                        </div>
+                    </div>
+                    
+                </div>
+            </div>
         </div>
-        <footer></footer>
-        
+        <footer>
+            <div id="mainFoot">
+                <div class="footCol">
+                    <h5>ABOUT</h5>
+                    <a>Contact Us</a>
+                    <a>About Us</a>
+                </div>
+                <div class="footCol">
+                    <h5>Help</h5>
+                    <a>Contact Us</a>
+                    <a>About Us</a>
+                </div>
+                <div class="footCol">
+                    <h5>Policy</h5>
+                    <a>Contact Us</a>
+                    <a>About Us</a>
+                </div>
+                <div class="footCol">
+                    <h5>Mail Us:</h5>
+                    <a>Contact Us</a>
+                    <a>About Us</a>
+                </div>
+                <div class="footCol">
+                    <h5>Registered Office Address:</h5>
+                    <a>Contact Us</a>
+                    <a>About Us</a>
+                </div>
+            </div>
+            <br/>
+            <hr/>
+            <p>&copy; Developer Funnel Build with &hearts;</p>
+           
+        </footer>
+        <script>
+            $('.owl-carousel').owlCarousel({
+                loop:true,
+                margin:10,
+                nav:true,
+                responsive:{
+                    0:{
+                        items:1
+                    },
+                    600:{
+                        items:3
+                    },
+                    1000:{
+                        items:5
+                    }
+                }
+            })
+        </script>
     </body>
 
 </html>
