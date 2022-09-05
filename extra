@@ -139,18 +139,18 @@ Step to generate angular app
 ////////////
 Building Block of angular
 /////////
-Modules
+Modules    >>>>> NgModule
 > Parent of the app
 > All the block have to be declare
-Component
+Component >>>>> Component
 > Html,css, logics
-Pipes
+Pipes >>>>> Pipe,PipeTransform
 > Filter the data
 > Run time data change (manupulation)
-Services
+Services >>>>> Injeactable
 > To Connect with external agent
 > Dependency Injection
-Routing
+Routing >>>>> NgModule
 > To Navigate between the pages
 
 //////////////////////////
@@ -261,3 +261,22 @@ xxl > 1400px
 
 
 API
+
+Page1
+# Top strip > https://devflipapi.herokuapp.com/topstrip
+# Cloths >  https://devflipapi.herokuapp.com/item/cloths?limit=5
+# Mobiles > https://devflipapi.herokuapp.com/item/mobile?limit=5
+# Watches > https://devflipapi.herokuapp.com/item/watches?limit=5
+# Formals > https://devflipapi.herokuapp.com/item/formals?limit=5
+
+Page 2(Listing)
+# List of item on basis of category
+# Cloths > https://devflipapi.herokuapp.com/item/cloths
+# Mobiles > https://devflipapi.herokuapp.com/item/mobile
+# Filter on Basis of Cost
+> https://devflipapi.herokuapp.com/filter/price/bags?lcost=50&hcost=500
+# Filter on Basis of StarRating
+> https://devflipapi.herokuapp.com/filter/rating/cloths/4
+
+Page3 (Details)
+> https://devflipapi.herokuapp.com/item/cloths?itemId=12
