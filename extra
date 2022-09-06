@@ -280,3 +280,12 @@ Page 2(Listing)
 
 Page3 (Details)
 > https://devflipapi.herokuapp.com/item/cloths?itemId=12
+
+
+
+///// Data Binding ////
+# One Way
+> Data Binding {{}}
+> Property Binding []
+> Event Binding ()
+# Two Way [()]
