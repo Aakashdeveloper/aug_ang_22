@@ -1,12 +1,17 @@
 <div id="main">
+      <!-- 
     {{heading}}
+    {{price| currency:'INR'}}
+    {{opend| date:'EEEE, MMMM d, y, h:mm:ss'}} 
+    {{item.name | uppercase}}-->
     <div id="top-strip">
         <div id="strip-container">
 
             <figure class="strip-icons" *ngFor="let item of topData">
                 <img [src]="item.imgUrl" alt="offer"/>
-                <figcaption>{{item.name}}</figcaption>
+                <figcaption>{{item.name|MyUpper:'upper' }}  </figcaption>
             </figure>
+
             
         </div>
     </div>

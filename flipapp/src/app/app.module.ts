@@ -7,6 +7,7 @@ import { HeaderComponent } from './Header/header.component';
 import { HomeComponent } from './Home/home.component';
 import { ClothsComponent } from './Home/cloths.component';
 import { MobileComponent } from './Home/mobile.component';
+import { MyUpperPipe } from './pipes/myupper.pipe';
 
 //decorator
 @NgModule({
@@ -18,7 +19,8 @@ import { MobileComponent } from './Home/mobile.component';
     FooterComponent,
     HomeComponent,
     ClothsComponent,
-    MobileComponent
+    MobileComponent,
+    MyUpperPipe
   ],
 
   // All the modules

@@ -9,6 +9,8 @@ import { ITop } from '../models/home.model';
 export class HomeComponent{
 
   heading:string = "Top Strip";
+  price:number = 200;
+  opend = new Date()
   topData:ITop[] = [
     {
       "_id": "6304f34a4fda6200b4ebe0e7",
@@ -19,7 +21,7 @@ export class HomeComponent{
     {
       "_id": "6304f34a4fda6200b4ebe0e8",
       "id": 2,
-      "name": "Mobiles",
+      "name": "mobiles",
       "imgUrl": "https://i.ibb.co/Jptfv9B/mobiles.png"
     },
     {
