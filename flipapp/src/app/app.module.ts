@@ -1,5 +1,6 @@
 import { NgModule } from '@angular/core';
 import { BrowserModule } from '@angular/platform-browser';
+import { CarouselModule } from 'ngx-owl-carousel-o';
 
 import { AppComponent } from './app.component';
 import { FooterComponent } from './Footer/footer.component';
@@ -25,7 +26,8 @@ import { MyUpperPipe } from './pipes/myupper.pipe';
 
   // All the modules
   imports: [
-    BrowserModule
+    BrowserModule,
+    CarouselModule
   ],
 
   // All the services
