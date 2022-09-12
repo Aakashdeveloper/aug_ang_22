@@ -9,6 +9,8 @@ import { HomeComponent } from './Home/home.component';
 import { ClothsComponent } from './Home/cloths.component';
 import { MobileComponent } from './Home/mobile.component';
 import { MyUpperPipe } from './pipes/myupper.pipe';
+import { AppRoutingModule } from './app-routing.module';
+import { NotFoundComponent } from './notfound/notFound.component';
 
 //decorator
 @NgModule({
@@ -21,13 +23,15 @@ import { MyUpperPipe } from './pipes/myupper.pipe';
     HomeComponent,
     ClothsComponent,
     MobileComponent,
-    MyUpperPipe
+    MyUpperPipe,
+    NotFoundComponent
   ],
 
   // All the modules
   imports: [
     BrowserModule,
-    CarouselModule
+    CarouselModule,
+    AppRoutingModule
   ],
 
   // All the services

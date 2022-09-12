@@ -289,3 +289,17 @@ Page3 (Details)
 > Property Binding []
 > Event Binding ()
 # Two Way [()]
+
+
+//////////
+Params
+> What we pass after / in url
+> It is complusory to define
+> Need to pass small data
+QueryParams
+> What we pass after ? in url
+> No Need to define
+> We can pass multiple query
+
+
+www.abc.com/cloths?color=red&type=baby
