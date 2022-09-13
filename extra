@@ -303,3 +303,11 @@ QueryParams
 
 
 www.abc.com/cloths?color=red&type=baby
+
+////Concat/////
+var a = 10
+var b = "my age is "+a
+"my age is 10"
+
+var a = 10;
+var b = `my age is ${a}`
