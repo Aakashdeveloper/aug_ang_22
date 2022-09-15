@@ -6,11 +6,14 @@
     {{item.name | uppercase}}-->
     <div id="top-strip">
         <div id="strip-container">
+          
+                <figure class="strip-icons" *ngFor="let item of topData">
+                    <a [routerLink]="['/listing',item.name]">
+                    <img [src]="item.imgUrl" alt="offer"/>
+                    <figcaption>{{item.name|MyUpper:'upper' }}  </figcaption>
+                    </a>
+                </figure>
 
-            <figure class="strip-icons" *ngFor="let item of topData">
-                <img [src]="item.imgUrl" alt="offer"/>
-                <figcaption>{{item.name|MyUpper:'upper' }}  </figcaption>
-            </figure>
 
             
         </div>

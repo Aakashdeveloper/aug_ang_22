@@ -1,1 +1,35 @@
-<h1>Listing Component for {{itemType}}</h1>
+<div class="main">
+    <div class="filters">
+    </div>
+    <div class="content">
+        <div class="d-inline-flex mt-0 flex-wrap flex-box">
+            <div *ngFor="let data of catData">
+                <a class="custom-card-anchor" href="details_page.html">
+                    <div class="card custom-card">
+                        <img [src]="data.image" alt="helmet" class="card-img-top card-img-width image">
+                        <a class="custom-card-anchor" href="details_page.html">
+                            <div class="card-body">
+                                <div class="card-title description">{{data.description}}</div>
+                                <div class="card-text">
+                                    <div class="brand"></div>
+                                    <div class="color">Black</div>
+                                    <span class="rating">
+                                        <button class="btn btn-success btn-sm"><span class="stars">{{data.hidden_stars}}</span> <i class="bi bi-star-fill stars-star"></i></button>
+                                        <span class="ratings">({{data.item_id}})</span> 
+                                    </span>
+                                    <div class="price">
+                                        <span class="new_price">&#8377;{{data.new_price}} </span>
+                                        <del><span class="old_price">&#8377;{{data.old_price}}</span></del>
+                                        <span class="discount"> {{data.discount}}% off</span>
+                                    </div>
+                                    <div class="delivery_type">{{data.delivery_type}}</div>
+                                    <div class="offer">Buy 2 items, save 3% extra</div>
+                                </div>
+                            </div>
+                        </a>
+                    </div>
+                </a>
+            </div>
+        </div>
+    </div>
+</div>

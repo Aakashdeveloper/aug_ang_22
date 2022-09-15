@@ -14,6 +14,8 @@ import { MobileComponent } from './Home/mobile.component';
 import { MyUpperPipe } from './pipes/myupper.pipe';
 import { NotFoundComponent } from './notfound/notFound.component';
 import { HomeService } from './services/Home.service';
+import { ListingService } from './services/Listing.service';
+import { ListingComponent } from './listing/listing.component';
 
 //decorator
 @NgModule({
@@ -27,7 +29,8 @@ import { HomeService } from './services/Home.service';
     ClothsComponent,
     MobileComponent,
     MyUpperPipe,
-    NotFoundComponent
+    NotFoundComponent,
+    ListingComponent
   ],
 
   // All the modules
@@ -41,7 +44,8 @@ import { HomeService } from './services/Home.service';
 
   // All the services
   providers: [
-    HomeService
+    HomeService,
+    ListingService
   ],
 
   //only and only main components

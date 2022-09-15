@@ -1,7 +1,7 @@
 import { Injectable } from '@angular/core';
 import { HttpClient } from '@angular/common/http';
 import { Observable } from 'rxjs';
-import { ITop,ICloths } from '../models/home.model';
+import { ITop,ICloths,IMobile } from '../models/home.model';
 
 @Injectable()
 
@@ -16,6 +16,10 @@ export class HomeService{
 
     getCloths():Observable<ICloths[]>{
         return this.http.get<ICloths[]>(`${this.url}/item/cloths?limit=5`)
+    }
+
+    getMobiles():Observable<IMobile[]>{
+        return this.http.get<IMobile[]>(`${this.url}/item/mobile?limit=6`)
     }
 
 
