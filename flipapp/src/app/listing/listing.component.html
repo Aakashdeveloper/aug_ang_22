@@ -1,13 +1,11 @@
 <div class="main">
     <div class="filters">
     </div>
-    <div class="content">
-        <div class="d-inline-flex mt-0 flex-wrap flex-box">
+    <div class="content" *ngIf="catData && catData.length; else noData">
             <div *ngFor="let data of catData">
-                <a class="custom-card-anchor" href="details_page.html">
+                <a class="custom-card-anchor" [routerLink]="['/details']" [queryParams]="{catName:itemType,id:data.item_id}">
                     <div class="card custom-card">
                         <img [src]="data.image" alt="helmet" class="card-img-top card-img-width image">
-                        <a class="custom-card-anchor" href="details_page.html">
                             <div class="card-body">
                                 <div class="card-title description">{{data.description}}</div>
                                 <div class="card-text">
@@ -26,10 +24,13 @@
                                     <div class="offer">Buy 2 items, save 3% extra</div>
                                 </div>
                             </div>
-                        </a>
                     </div>
                 </a>
             </div>
-        </div>
     </div>
+    <ng-template #noData>
+        <h2>Loading....</h2>
+        <img src="../../assets/loader.gif"/>
+    </ng-template>
+
 </div>

@@ -4,6 +4,8 @@
     height: auto;
     display: inline-block;
 } 
+
+
 .filters {
     margin-top: 10px;
     width: 18%;
@@ -30,7 +32,7 @@
 }
 .content {
     width: 79%;
-    float: left;
+    display: inline-block;
 }
 /* .filters-heading {
     font-size: 18px;
@@ -113,12 +115,16 @@
 }
 .custom-card {
     border: none;
+    float: left;
     padding: 16px;
+    height:400px;
     position: relative;
     transition: box-shadow .2s ease-in-out;
     width: 24%;
     margin: 5px;
     flex-grow: 1;
+    box-shadow: 1px 1px 12px lightgrey
+
 }
 .custom-card:hover {
     /* box-shadow: 0 3px 16px 0 rgb(0 0 0 / 11%); */
@@ -126,8 +132,12 @@
 }
 .card-img-width {
     width: 62% !important;
+    height:200px;
     margin: auto;
     margin-left: 20%;
+}
+.mainContainer{
+    width:100%
 }
 .custom-card-anchor {
     text-decoration: none;

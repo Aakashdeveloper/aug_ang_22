@@ -16,6 +16,7 @@ import { NotFoundComponent } from './notfound/notFound.component';
 import { HomeService } from './services/Home.service';
 import { ListingService } from './services/Listing.service';
 import { ListingComponent } from './listing/listing.component';
+import { DetailsComponent } from './details/details.component';
 
 //decorator
 @NgModule({
@@ -30,7 +31,8 @@ import { ListingComponent } from './listing/listing.component';
     MobileComponent,
     MyUpperPipe,
     NotFoundComponent,
-    ListingComponent
+    ListingComponent,
+    DetailsComponent
   ],
 
   // All the modules
