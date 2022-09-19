@@ -17,6 +17,8 @@ import { HomeService } from './services/Home.service';
 import { ListingService } from './services/Listing.service';
 import { ListingComponent } from './listing/listing.component';
 import { DetailsComponent } from './details/details.component';
+import { FormsModule } from '@angular/forms';
+import { ProdSearchPipe } from './pipes/search.pipe';
 
 //decorator
 @NgModule({
@@ -32,7 +34,8 @@ import { DetailsComponent } from './details/details.component';
     MyUpperPipe,
     NotFoundComponent,
     ListingComponent,
-    DetailsComponent
+    DetailsComponent,
+    ProdSearchPipe
   ],
 
   // All the modules
@@ -41,7 +44,8 @@ import { DetailsComponent } from './details/details.component';
     CarouselModule,
     AppRoutingModule,
     HttpClientModule,
-    BrowserAnimationsModule
+    BrowserAnimationsModule,
+    FormsModule
   ],
 
   // All the services

@@ -1,4 +1,5 @@
-import {Component,OnInit} from '@angular/core';
+import { Component,OnInit } from '@angular/core';
+import { ActivatedRoute } from '@angular/router';
 
 @Component({
     templateUrl: './details.component.html',
@@ -6,7 +7,14 @@ import {Component,OnInit} from '@angular/core';
 })
 
 export class DetailsComponent implements OnInit {
-    constructor(){}
+    catName: string|null = '';
+    id: number = 0
 
-    ngOnInit(){}
+    constructor(private route:ActivatedRoute){}
+
+    ngOnInit():void{
+        this.catName = this.route.snapshot.queryParamMap.get('catName');
+        this.id = Number(this.route.snapshot.queryParamMap.get('id'))
+
+    }
 }

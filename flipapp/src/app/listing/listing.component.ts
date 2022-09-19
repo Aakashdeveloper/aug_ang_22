@@ -9,7 +9,8 @@ import { ListingService } from '../services/Listing.service';
 
 export class ListingComponent implements OnInit {
     itemType: string = ''
-    catData:any[]=[]
+    catData:any[]=[];
+    userInput:string = '';
 
     // any declarations
     constructor(private route:ActivatedRoute,
