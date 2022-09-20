@@ -3,7 +3,7 @@
 
     <!-- (left) item-card: is a custom class -->
     <div class="card item-card">
-        <img class="item-card-img" src="https://i.ibb.co/dcRmhTd/8f3c87d739b0.jpg" alt="...">
+        <img class="item-card-img" [src]="details[0].image" alt="...">
         <div class="card-body item-card-body">
             <button class="btn btn-warning btn-lg item-card-btn1">Add To Cart</button>
             &nbsp;
@@ -13,16 +13,16 @@
 
     <!-- (right) content -->
     <div class="content">
-        <div class="description">VEGA Crux Motorbike Helmet  (Black)</div>
+        <div class="description">{{details[0].description}}</div>
         <div class="rating">
-            <span class="stars">4.3 <i class="bi bi-star-fill"></i></span>
+            <span class="stars">{{details[0].hidden_stars}} <i class="bi bi-star-fill"></i></span>
             <span class="ratings">1,08,693 Ratings</span>
             <span class="reviews">15,135 Reviews</span>
         </div>
         <div class="price">
-            <span class="new-price">₹1,184</span>
-            <span class="old-price">₹1,358</span>
-            <span class="discount">12% off</span>
+            <span class="new-price">{{details[0].new_price|currency:'INR'}}</span>
+            <span class="old-price">{{details[0].old_price|currency:'INR'}}</span>
+            <span class="discount">{{details[0].discount}}% off</span>
         </div>
         <div class="offer">
             <div class="offer1">Available offers</div>
@@ -40,7 +40,7 @@
         <button class="btn btn-sm">Change</button>
     </div>
 
-    <div class="size">
+    <div class="size" *ngIf="catName == 'cloths'">
         <span>Size</span>
         <label for="medium" class="btn btn-outline-primary">M
             <input type="checkbox" class="btn-check" autocomplete="on" id="medium">
@@ -52,20 +52,21 @@
     </div>
 
     <div class="highlight-services">
-        <div class="highlights">
+        <div class="highlights" *ngIf="catName == 'mobile'">
             <span>Highlights: </span>
             <ul>
-                <li>Type: Flip-up</li>
-                <li>For Men, Women</li>
-                <li>Visor Present</li>
-                <li>Size: M</li>
-                <li>Quick Release Buckle</li>
+                <li>{{details[0].more_data}}</li>
+                <li>{{details[0].more_data2}}</li>
+                <li>{{details[0].more_data3}}</li>
+                <li>{{details[0].more_data4}}</li>
+                <li>{{details[0].more_data5}}</li>
             </ul>
         </div>
 
         <div class="services">
             <div><i class="bi bi-recycle"></i> 7 day replacement policy</div>
             <div><i class="fa fa-rupee" style="color:blue"></i> Cash on delivery available</div>
+            <div><i class="fa-solid fa-truck"></i> {{details[0].delivery_type}}</div>
         </div>
     </div>
 

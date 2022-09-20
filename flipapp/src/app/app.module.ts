@@ -19,6 +19,7 @@ import { ListingComponent } from './listing/listing.component';
 import { DetailsComponent } from './details/details.component';
 import { FormsModule } from '@angular/forms';
 import { ProdSearchPipe } from './pipes/search.pipe';
+import { DetailsService } from './services/Details.Service';
 
 //decorator
 @NgModule({
@@ -51,7 +52,8 @@ import { ProdSearchPipe } from './pipes/search.pipe';
   // All the services
   providers: [
     HomeService,
-    ListingService
+    ListingService,
+    DetailsService
   ],
 
   //only and only main components
