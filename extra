@@ -326,3 +326,6 @@ a.indexOf('London')
 -1
 a.indexOf('Paris')
 -1
+
+parent to child > @input
+child to parent > @Output

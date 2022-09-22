@@ -1,5 +1,6 @@
 <div class="main">
     <div class="filters">
+        <app-rating-filter [filterName]="filterText" (ratingClicked)="dataReceive($event)"></app-rating-filter>
     </div>
     
     <div class="content" *ngIf="catData && catData.length; else noData">

@@ -11,6 +11,7 @@ export class ListingComponent implements OnInit {
     itemType: string = ''
     catData:any[]=[];
     userInput:string = '';
+    filterText:string = "Customer Rating Filter"
 
     // any declarations
     constructor(private route:ActivatedRoute,
@@ -22,6 +23,10 @@ export class ListingComponent implements OnInit {
         this.listingService.getDataWrtC(this.itemType)
             .subscribe((data:any[]) => this.catData = data)
 
+    }
+
+    dataReceive(ratingVal:string){
+        console.log(">>>ratingVal",ratingVal)
     }
 
 }

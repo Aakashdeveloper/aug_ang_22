@@ -20,6 +20,7 @@ import { DetailsComponent } from './details/details.component';
 import { FormsModule } from '@angular/forms';
 import { ProdSearchPipe } from './pipes/search.pipe';
 import { DetailsService } from './services/Details.Service';
+import { RatingFilterComponent } from './filters/ratingFilter';
 
 //decorator
 @NgModule({
@@ -36,7 +37,8 @@ import { DetailsService } from './services/Details.Service';
     NotFoundComponent,
     ListingComponent,
     DetailsComponent,
-    ProdSearchPipe
+    ProdSearchPipe,
+    RatingFilterComponent
   ],
 
   // All the modules
