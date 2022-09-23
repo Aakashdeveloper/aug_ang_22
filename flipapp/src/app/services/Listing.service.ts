@@ -13,4 +13,12 @@ export class ListingService {
         return this.http.get<any[]>(`${this.url}/item/${catName}`)
     }
 
+    getDataWrtR(value:string,catName:string):Observable<any[]>{
+        return this.http.get<any[]>(`${this.url}/filter/rating/${catName}/${value}`)
+    }
+
+    getDataWrtCost(lcost:number,hcost:number,catName:string):Observable<any[]>{
+        return this.http.get<any[]>(`${this.url}/filter/price/${catName}?lcost=${lcost}&hcost=${hcost}`)
+    }
+
 }
