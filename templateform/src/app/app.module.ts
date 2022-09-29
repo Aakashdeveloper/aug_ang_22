@@ -1,11 +1,13 @@
 import { NgModule } from '@angular/core';
 import { BrowserModule } from '@angular/platform-browser';
+import { HttpClientModule } from '@angular/common/http';
 
 import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
 import { FormsComponent } from './Forms/form.component';
 import { ConfirmComponent } from './confirm/confirm.component';
 import { FormsModule } from '@angular/forms';
+import { FormService } from './Forms/form.service';
 
 @NgModule({
   declarations: [
@@ -16,9 +18,12 @@ import { FormsModule } from '@angular/forms';
   imports: [
     BrowserModule,
     AppRoutingModule,
-    FormsModule
+    FormsModule,
+    HttpClientModule
   ],
-  providers: [],
+  providers: [
+    FormService
+  ],
   bootstrap: [AppComponent]
 })
 export class AppModule { }
