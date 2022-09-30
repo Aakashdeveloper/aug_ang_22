@@ -51,4 +51,4 @@ export class FormsComponent{
         this.router.navigate(['/confirm'])
     }
 
-}
+}   
