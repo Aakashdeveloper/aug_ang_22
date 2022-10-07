@@ -9,12 +9,17 @@ import { RegisterFormsComponent } from './registerForm/registerForm.component';
 import { RegisterFormService } from './registerForm/registerForm.service';
 import { LoginFormService } from './loginForm/loginForm.service';
 import { LoginFormsComponent } from './loginForm/loginForm.component';
+import { UserService } from './userList/userlist.service';
+import { UserListComponent } from './userList/userlist.component';
+import { ProfileComponent } from './profile/profile.component';
 
 @NgModule({
   declarations: [
     AppComponent,
     RegisterFormsComponent,
-    LoginFormsComponent
+    LoginFormsComponent,
+    UserListComponent,
+    ProfileComponent
   ],
   imports: [
     BrowserModule,
@@ -24,7 +29,8 @@ import { LoginFormsComponent } from './loginForm/loginForm.component';
   ],
   providers: [
     RegisterFormService,
-    LoginFormService
+    LoginFormService,
+    UserService
   ],
   bootstrap: [AppComponent]
 })

@@ -5,6 +5,7 @@
             Login Forms
         </div>
         <div class="panel-body">
+            <h2 style="color:red">{{loginError}}</h2>
             <form #form="ngForm" (submit)="submitForm(form)">
                 <div class="row">
                     <div class="form-group col-md-6" [class.has-error]="mail.invalid && mail.dirty">

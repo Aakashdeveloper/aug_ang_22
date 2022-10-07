@@ -3,12 +3,15 @@ import { ILogin } from './loginForm.model';
 import { NgForm } from '@angular/forms';
 import { LoginFormService } from './loginForm.service';
 import { Router } from '@angular/router';
+import { LoginRes, UserRes} from './loginForm.model'
 
 @Component({
     templateUrl: './loginForm.component.html'
 })
 
 export class LoginFormsComponent{
+
+    loginError:string=''
 
     constructor(
         private loginFormService:LoginFormService,
@@ -19,8 +22,21 @@ export class LoginFormsComponent{
     submitForm(Form:NgForm):void{
         console.log(Form.value)
         this.loginFormService.loginUser(Form.value)
-            .subscribe((res:any[]) => {console.log(`Form Submitted`)})
-        this.router.navigate(['/login'])
+            .subscribe((res:LoginRes) => {
+                this.loginError = ''
+                this.loginFormService.getUserInfo(res['token'])
+                .subscribe((response:UserRes) => (this.validateUser(response['role'])))
+            },
+            (err:any[]) =>{
+                this.loginError = "Please Enter Correct Details"
+            }
+            )
+    
+    }
+
+    validateUser(roleType:string):void{
+        localStorage.setItem('Role_Type',roleType)
+        this.router.navigate(['/profile'])
     }
 
 }   
