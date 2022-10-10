@@ -13,6 +13,12 @@ import { FormsModule } from '@angular/forms';
 import { DetailsService } from './services/Details.Service';
 import { HomeModule } from './Home/home.module';
 import { ListingModule } from './listing/listing.module';
+import { LoginFormsComponent } from './loginForm/loginForm.component';
+import { RegisterFormsComponent } from './registerForm/registerForm.component';
+import { RegisterFormService } from './registerForm/registerForm.service';
+import { LoginFormService } from './loginForm/loginForm.service';
+import { PlaceOrderComponent } from './place-order/place-order.component';
+import { ViewOrderComponent } from './view-order/view-order.component';
 
 
 //decorator
@@ -25,6 +31,10 @@ import { ListingModule } from './listing/listing.module';
     FooterComponent,
     NotFoundComponent,
     DetailsComponent,
+    LoginFormsComponent,
+    RegisterFormsComponent,
+    PlaceOrderComponent,
+    ViewOrderComponent
   ],
 
   // All the modules
@@ -39,7 +49,9 @@ import { ListingModule } from './listing/listing.module';
 
   // All the services
   providers: [
-    DetailsService
+    DetailsService,
+    LoginFormService,
+    RegisterFormService
   ],
 
   //only and only main components

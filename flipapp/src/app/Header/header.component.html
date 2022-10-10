@@ -12,7 +12,26 @@
         <button><i class="fa-solid fa-magnifying-glass"></i></button>
     </div>
     <div id="login">
-        <button> Login</button> &nbsp;&nbsp;&nbsp;
-        <button> SignUp</button>
+        <div *ngIf='token == ""'>
+            <a class="btn btn-info" [routerLink]="['/login']">
+                <span class="glyphicon glyphicon-log-in"></span>
+                Login
+            </a> &nbsp;&nbsp;&nbsp;
+            <a class="btn btn-info" [routerLink]="['/register']">
+                <span class="glyphicon glyphicon-user"></span>
+                Register
+            </a>
+        </div>
+        <div *ngIf='token !== ""'>
+            <a class="btn btn-info" [routerLink]="['/login']">
+                <span class="glyphicon glyphicon-users"></span>
+                Hi {{userInfo.name}}
+            </a> &nbsp;&nbsp;&nbsp;
+            <button class="btn btn-info" (click)="logoutUser()">
+                <span class="glyphicon glyphicon-user"></span>
+                Logout
+            </button>
+        </div>
+        
     </div>
 </header>

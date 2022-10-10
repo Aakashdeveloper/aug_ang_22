@@ -17,7 +17,7 @@ export class LoginFormsComponent{
         private loginFormService:LoginFormService,
         private router: Router){}
 
-    myEmployee = new ILogin('a@a.com','12345678');
+    myEmployee = new ILogin('Nikki@gmail.com','12345678');
     
     submitForm(Form:NgForm):void{
         console.log(Form.value)

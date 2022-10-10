@@ -4,10 +4,12 @@ import { RegisterFormsComponent } from './registerForm/registerForm.component'
 import { LoginFormsComponent } from './loginForm/loginForm.component';
 import { UserListComponent } from './userList/userlist.component';
 import { ProfileComponent } from './profile/profile.component';
+import { ProfileGaurdService } from './gaurds/profilegaurd.service';
+import { UserGaurdService } from './gaurds/usergaurd.service';
 
 const routes: Routes = [
-  {path:'profile',component:ProfileComponent},
-  {path:'users',component:UserListComponent},
+  {path:'profile',canActivate:[ProfileGaurdService],component:ProfileComponent},
+  {path:'users',canActivate:[UserGaurdService],component:UserListComponent},
   {path:'login',component:LoginFormsComponent},
   {path:'register',component:RegisterFormsComponent},
   {path:'',component:RegisterFormsComponent}
@@ -15,6 +17,10 @@ const routes: Routes = [
 
 @NgModule({
   imports: [RouterModule.forRoot(routes)],
-  exports: [RouterModule]
+  exports: [RouterModule],
+  providers: [
+    ProfileGaurdService,
+    UserGaurdService
+  ]
 })
 export class AppRoutingModule { }

@@ -1,0 +1,45 @@
+<div id="main">
+      <!-- 
+    {{heading}}
+    {{price| currency:'INR'}}
+    {{opend| date:'EEEE, MMMM d, y, h:mm:ss'}} 
+    {{item.name | uppercase}}-->
+    <div id="top-strip">
+        <div id="strip-container">
+          
+                <figure class="strip-icons" *ngFor="let item of topData">
+                    <a [routerLink]="['/listing',item.name]">
+                    <img [src]="item.imgUrl" alt="offer"/>
+                    <figcaption>{{item.name|MyUpper:'upper' }}  </figcaption>
+                    </a>
+                </figure>
+
+
+            
+        </div>
+    </div>
+    <div id="slider">
+        <div id="devCarousel" class="carousel slide" data-ride="carousel">
+            <div class="carousel-inner">
+                <div class="item active">
+                    <img src="assets/images/carousel-imgs/redmi10.jpg" alt="slider" class="sliderImage"/>
+                </div>
+                <div class="item">
+                    <img src="assets/images/carousel-imgs/oppo-k10.jpg" alt="slider" class="sliderImage"/>
+                </div>
+                <div class="item">
+                    <img src="assets/images/carousel-imgs/samsung-f23.jpg" alt="slider" class="sliderImage"/>
+                </div>
+            </div>
+            <a class="left carousel-control" href="#devCarousel" data-slide="prev">
+                <span class="glyphicon glyphicon-chevron-left"></span>
+            </a>
+            <a class="right carousel-control" href="#devCarousel" data-slide="next">
+                <span class="glyphicon glyphicon-chevron-right"></span>
+            </a>
+        </div>
+    
+    </div>
+    <app-cloths></app-cloths>
+    <app-mobile></app-mobile>
+</div>
