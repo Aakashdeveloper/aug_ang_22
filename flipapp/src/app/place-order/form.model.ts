@@ -6,6 +6,6 @@ export class IOrder{
         public phone:number,
         public cost:number,
         public id:number,
-        public hotel_name:string,
+        public product_name:string,
     ){}
 }

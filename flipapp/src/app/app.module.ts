@@ -19,6 +19,7 @@ import { RegisterFormService } from './registerForm/registerForm.service';
 import { LoginFormService } from './loginForm/loginForm.service';
 import { PlaceOrderComponent } from './place-order/place-order.component';
 import { ViewOrderComponent } from './view-order/view-order.component';
+import { OrderService } from './services/order.service';
 
 
 //decorator
@@ -51,7 +52,8 @@ import { ViewOrderComponent } from './view-order/view-order.component';
   providers: [
     DetailsService,
     LoginFormService,
-    RegisterFormService
+    RegisterFormService,
+    OrderService
   ],
 
   //only and only main components

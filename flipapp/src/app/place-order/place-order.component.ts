@@ -1,54 +1,36 @@
 import { Component } from '@angular/core';
-import { IUser } from './form.model';
+import { IOrder } from './form.model';
 import { NgForm } from '@angular/forms';
-import { FormService } from './form.service';
-import { Router } from '@angular/router';
+import { OrderService } from '../services/order.service';
+import { Router,ActivatedRoute } from '@angular/router';
 
 @Component({
-    templateUrl: './form.component.html'
+    templateUrl: './place-order.component.html'
 })
 
 export class PlaceOrderComponent{
 
-    constructor(private formService: FormService,
-        private router: Router){}
+    constructor(private orderService: OrderService,
+        private router: Router,
+        private route:ActivatedRoute){}
 
-    language: string[] = ['Node','React','Angular','Javascript']
-    myEmployee = new IUser('Amit','Sharma','a@a.com','12345678','Node');
-    hasCodeLangError:boolean = false;
+    url:string = ''
+    prodName:string = this.route.snapshot.params['itemName'];
+    userInfo:string|null = sessionStorage.getItem('userResponse');
+    id:number = Math.floor(Math.random() * 1000000)
 
-    firstToUpper(value:string):void{
-        if(value.length>0){
-            value = value.trim();
-            this.myEmployee.firstName = value.charAt(0).toUpperCase()+value.slice(1).toLowerCase()
-        }else{
-            this.myEmployee.firstName = value;
-        }
-    }
+    name = this.userInfo?this.userInfo.split(',')[1]:''
+    email = this.userInfo?this.userInfo.split(',')[2]:''
+    phone = this.userInfo?this.userInfo.split(',')[3]:''
 
-    showPassword(event:Event):void{
-        console.log((event.target as HTMLInputElement).type)
-        let inputType = (event.target as HTMLInputElement).type;
-        if(inputType === 'password'){
-            (event.target as HTMLInputElement).type = 'text'
-        }else{
-            (event.target as HTMLInputElement).type = 'password'
-        }
-    }
+    myOrder = new IOrder(this.name,this.email,'hmno 876 Delhi',Number(this.phone),733.55,this.id,this.prodName);
 
-    validateCodeLang():void{
-        if(this.myEmployee.clang === 'default'){
-            this.hasCodeLangError = true
-        }else{
-            this.hasCodeLangError = false
-        }
-    }
 
     submitForm(Form:NgForm):void{
         console.log(Form.value)
-        this.formService.postEmp(Form.value)
+        this.orderService.postOrder(Form.value)
             .subscribe((res:any[]) => {console.log(`Form Submitted`)})
-        this.router.navigate(['/confirm'])
+        this.url='http://localhost:4000/paynow?amount='+Form.value.cost+'&orderId='+Form.value.id+'&email='+Form.value.email+'&phone='+Form.value.phone
     }
 
 }   

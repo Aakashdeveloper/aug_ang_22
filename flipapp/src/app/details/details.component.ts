@@ -19,6 +19,9 @@ export class DetailsComponent implements OnInit {
         this.catName = this.route.snapshot.queryParamMap.get('catName');
         this.id = Number(this.route.snapshot.queryParamMap.get('id'))
         this.detailsService.getDetails(this.catName,this.id)
-            .subscribe((data:any[]) => this.details = data)
+            .subscribe(
+                (data:any[]) => this.details = data
+                //sessionStorage.setItem('cost',this.details[0].new_price)
+            )
     }
 }
