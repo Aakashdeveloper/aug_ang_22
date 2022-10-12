@@ -27,17 +27,17 @@ DummyApi
 Reactive Form
 Login app (jwt)
 combine login + zomato
-/////////////////////////////
 Deployment
->>>>>>>>>
-AWS
-Heroku
 Angular over node server (MEAN)
+Angular over Python server
+Heroku
+Netlify
+AWS
+Docker
+/////////////////////////////
+>>>>>>>>>
 Nginx
 Jenkins For Angular
-Netlify
-Docker
-Angular over Python server
 >>>>>>>>>>
 Angular Material (https://material.angular.io/components/select/examples)
 Testing
@@ -357,3 +357,7 @@ npx json-server --watch employee.json --port 8700
 (Header) => {'x-access-token':'token value from login'}
 
 ///dummy api
+
+
+docker build . -t flipapp
+docker run -p 8700:4200 flipapp
