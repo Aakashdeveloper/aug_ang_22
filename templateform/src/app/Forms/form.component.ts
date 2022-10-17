@@ -3,6 +3,7 @@ import { IUser } from './form.model';
 import { NgForm } from '@angular/forms';
 import { FormService } from './form.service';
 import { Router } from '@angular/router';
+import { MatAccordion } from '@angular/material/expansion';
 
 @Component({
     templateUrl: './form.component.html'
@@ -12,6 +13,7 @@ export class FormsComponent{
 
     constructor(private formService: FormService,
         private router: Router){}
+
 
     language: string[] = ['Node','React','Angular','Javascript']
     myEmployee = new IUser('Amit','Sharma','a@a.com','12345678','Node');

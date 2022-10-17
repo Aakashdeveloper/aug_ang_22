@@ -28,21 +28,18 @@ Reactive Form
 Login app (jwt)
 combine login + zomato
 Deployment
+>>>>>>>>>
 Angular over node server (MEAN)
 Angular over Python server
 Heroku
 Netlify
 AWS
 Docker
-/////////////////////////////
->>>>>>>>>
 Nginx
 Jenkins For Angular
->>>>>>>>>>
 Angular Material (https://material.angular.io/components/select/examples)
 Testing
 Github
-
 --------------------
 Login With Github
 PWA > Angular App Offline
@@ -361,3 +358,6 @@ npx json-server --watch employee.json --port 8700
 
 docker build . -t flipapp
 docker run -p 8700:4200 flipapp
+
+
+https://github.com/Aakashdeveloper/Angular-Interview-question

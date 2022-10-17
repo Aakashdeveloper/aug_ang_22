@@ -8,6 +8,9 @@ import { FormsComponent } from './Forms/form.component';
 import { ConfirmComponent } from './confirm/confirm.component';
 import { FormsModule } from '@angular/forms';
 import { FormService } from './Forms/form.service';
+import { MatExpansionModule } from '@angular/material/expansion';
+import {MatButtonModule} from '@angular/material/button';
+
 
 @NgModule({
   declarations: [
@@ -19,7 +22,9 @@ import { FormService } from './Forms/form.service';
     BrowserModule,
     AppRoutingModule,
     FormsModule,
-    HttpClientModule
+    HttpClientModule,
+    MatExpansionModule,
+    MatButtonModule
   ],
   providers: [
     FormService
